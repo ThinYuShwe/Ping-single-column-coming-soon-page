@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+section {
+  max-width: 20rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 15vh;
+}
+
+.logo {
+  margin-top: 2vh;
+  margin-bottom: 8vh;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: grey;
+  font-weight: lighter;
+  margin-bottom: 3vh;
+}
+
+h1 span {
+  font-weight: bold;
+  color: black;
+}
+
+article p {
+  margin-bottom: 5vh;
+  font-size: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.email {
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 1rem;
+  height: 2.8rem;
+  border-radius: 1.5rem;
+  padding-left: 2.3rem;
+}
+
+.email.error-border {
+  border-color: red;
+}
+
+.email-input {
+  height: 5rem;
+}
+
+.email-input input {
+  width: 100%;
+}
+
+.email::placeholder {
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
+  height: 2.8rem;
+  font-size: 1rem;
+  background-color: rgba(48, 72, 255, 0.836);
+  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.invalid-feedback {
+  display: none;
+}
+
+.invalid-feedback p {
+  color: red;
+  margin-left: 2rem;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3vh;
+}
+
+footer a ion-icon {
+  font-size: 1.7rem;
+  color: rgb(56, 76, 255);
+}
+
+footer a {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  color: rgb(199, 199, 199);
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .email {
+    width: 25rem;
+  }
+
+  .email-input input {
+    width: 21rem;
+  }
+
+  .btn {
+    width: 10rem;
+  }
+
+  .image {
+    width: 35rem;
+  }
+}
